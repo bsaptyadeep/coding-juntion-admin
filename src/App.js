@@ -35,7 +35,7 @@ function App() {
       const formData = new FormData();
       formData.append('file', file)
       formData.append('data', JSON.stringify(data))
-      const res = await axios.post("https://question-paper-nodejs-e3e7.vercel.app/api/question-paper", formData)
+      const res = await axios.post("https://coding-junction-backend-node-js.vercel.app/api/question-paper", formData)
      // console.log(res)
       setMsg(res);
     }catch(err){
